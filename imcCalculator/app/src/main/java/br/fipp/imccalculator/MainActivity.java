@@ -25,27 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvResultado, tvPeso, tvAltura;
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        /* NECESSARIO "INFLAR" O MENU */
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu1, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if(item.getItemId() == R.id.itAjuda){
-            // chamar activity ajuda
-        }
-        else{
-            this.finish();
-        }
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +70,33 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    /* MENU */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        /* NECESSARIO "INFLAR" O MENU */
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu1, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.itAjuda){
+            // chamar activity ajuda
+            Intent intent = new Intent(this, AjudaActivity.class);
+            startActivity(intent);
+        }
+        else{
+            this.finish();
+        }
+
+        return true;
+    }
+    /* MENU */
 
     private void exibeResultado() {
         // INTENÇÃO DE TROCAR DE TELA ...          Contexto atual, Activity futura
