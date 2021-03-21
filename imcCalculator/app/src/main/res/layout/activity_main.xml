@@ -7,38 +7,58 @@
     android:background="#B9F6CA"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/etPeso"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="14"
-        android:fadingEdge="horizontal|vertical"
-        android:fontFamily="monospace"
-        android:hint="Informe seu peso"
-        android:inputType="number"
+        android:text="Peso"
         android:textAlignment="center"
-        android:textColor="#B388FF" />
-
-    <EditText
-        android:id="@+id/etAltura"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:fontFamily="monospace"
-        android:hint="Informe sua altura"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textColor="#B388FF" />
-
-    <Button
-        android:id="@+id/btCalcular"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:text="Calcular"
         android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/sbPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="199"
+        android:progress="60"
+        android:secondaryProgressTint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:text="60"
+        android:textAlignment="center"
+        android:textColor="#131010" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/sbAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="220"
+        android:progress="165"
+        android:secondaryProgressTint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:text="1.65"
+        android:textAlignment="center"
+        android:textColor="#151010" />
 
     <TextView
         android:id="@+id/tvResultado"
@@ -48,4 +68,5 @@
         android:textAlignment="center"
         android:textColor="#EA80FC"
         android:textSize="36sp" />
+
 </LinearLayout>

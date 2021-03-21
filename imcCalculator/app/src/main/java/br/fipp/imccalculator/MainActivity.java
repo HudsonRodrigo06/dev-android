@@ -1,12 +1,17 @@
 package br.fipp.imccalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,38 +21,74 @@ import br.fipp.imccalculator.util.Calculos;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText etPeso, etAltura;
-    private Button btCalcular;
-    private TextView tvResultado;
+    private SeekBar sbPeso, sbAltura;
+    private TextView tvResultado, tvPeso, tvAltura;
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        /* NECESSARIO "INFLAR" O MENU */
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu1, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.itAjuda){
+            // chamar activity ajuda
+        }
+        else{
+            this.finish();
+        }
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /* Linka objetos da interafce */
-        etPeso = findViewById(R.id.etPeso);
-        etAltura = findViewById(R.id.etAltura);
-        btCalcular = findViewById(R.id.btCalcular);
+        sbPeso = findViewById(R.id.sbPeso);
+        sbAltura = findViewById(R.id.sbAltura);
         tvResultado = findViewById(R.id.tvResultado);
+        tvPeso = findViewById(R.id.tvPeso);
+        tvAltura = findViewById(R.id.tvAltura);
 
-        /* EVENTOS */
-
-        /*
-            SE TEM 1 PARAMETRO, USA O  e->{} ..... SE NAO TEM PARAMETRO, USA ()->{}
-            SE TEM 2 USA (e, f) -> {}
-
-            btCalcular.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    tvResultado.setText("30");
-                }
-            });
-        */
-
-        btCalcular.setOnClickListener( e->{ calcImc(); });
         tvResultado.setOnClickListener( e->{ exibeResultado(); });
+
+        sbPeso.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                tvPeso.setText(""+(progress+1));
+                calcImc();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
+
+        sbAltura.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                tvAltura.setText(""+(progress/100.0));
+                calcImc();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
+
+
 
     }
 
@@ -66,12 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
         try
         {
-            double peso = Double.parseDouble(etPeso.getText().toString());
-            double altura = Double.parseDouble(etAltura.getText().toString());
+            double peso = sbPeso.getProgress()+1;
+            double altura = sbAltura.getProgress()/100.0;
             DecimalFormat df = new DecimalFormat("###.00");
 
-            if(altura == 0 || peso == 0)
-                throw new Exception("Valor Zero.");
+
 
             double imc = Calculos.IMC(peso, altura);
             tvResultado.setText(df.format(imc));
