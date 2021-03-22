@@ -11,17 +11,17 @@ import br.fipp.imccalculator.util.Singleton;
 
 public class ListActivity extends AppCompatActivity {
 
-    private ListView listview;
+    private ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        listview = listview.findViewById(R.id.listview);
+        lista = findViewById(R.id.listview);
         ArrayAdapter<Medida> adapter;
 
         adapter = new ArrayAdapter<Medida>(this, android.R.layout.simple_list_item_1, Singleton.getMedidas());
-        listview.setAdapter(adapter);
+        lista.setAdapter(adapter);
     }
 }

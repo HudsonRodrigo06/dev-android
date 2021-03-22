@@ -17,7 +17,7 @@ public class AjudaActivity extends AppCompatActivity {
 
 
 
-        btnVoltar = btnVoltar.findViewById(R.id.btnVoltar);
+        btnVoltar = findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(e->{ this.finish(); });
     }
 }
