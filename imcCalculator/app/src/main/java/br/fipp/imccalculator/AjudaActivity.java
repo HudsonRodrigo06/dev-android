@@ -15,8 +15,6 @@ public class AjudaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajuda);
 
-
-
         btnVoltar = findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(e->{ this.finish(); });
     }

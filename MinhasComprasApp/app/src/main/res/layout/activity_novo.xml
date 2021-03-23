@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB"
+    android:orientation="vertical"
+    tools:context=".NovoActivity">
+
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Informe um item"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sbQtde"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:max="20" />
+
+        <Spinner
+            android:id="@+id/spinUn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvQtde"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="0"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/btConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="Confirmar :D" />
+
+</LinearLayout>

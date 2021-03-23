@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MinhasComprasApp</string>
+
+    <string-array name="medidas">
+        <item>     </item>
+        <item>Kg</item>
+        <item>Gramas</item>
+        <item>Metros</item>
+        <item>Centimetros</item>
+        <item>Peça</item>
+        <item>Duzia</item>
+        <item>Garrafa</item>
+        <item>Litro</item>
+        <item>Mililitro</item>
+        <item>Kit</item>
+    </string-array>
+
+
+</resources>

@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private SeekBar sbPeso, sbAltura;
     private TextView tvResultado, tvPeso, tvAltura;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
         editor.commit();
     }
+
 
     /* MENU */
     @Override
