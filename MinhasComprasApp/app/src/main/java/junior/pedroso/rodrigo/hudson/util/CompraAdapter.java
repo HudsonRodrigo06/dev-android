@@ -14,6 +14,7 @@ import java.util.List;
 
 import junior.pedroso.rodrigo.hudson.R;
 
+
 public class CompraAdapter extends ArrayAdapter<Compra> {
 
     private int resource;

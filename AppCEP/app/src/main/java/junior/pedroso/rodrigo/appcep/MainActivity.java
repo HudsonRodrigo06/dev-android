@@ -25,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
         btBuscar = findViewById(R.id.btBuscar);
 
         btBuscar.setOnClickListener(e->{buscarCep();});
-
-
-
     }
 
     private void buscarCep() {
@@ -43,11 +40,6 @@ public class MainActivity extends AppCompatActivity {
 //                    oJson.getString("uf"));
 
 
-            // String API_KEY = fc580777fc9a39fcb84defca4eec659e;
-            // "https://api.vagalume.com.br/search.php"
-            //        + "?art=" + artist
-            //        + "&mus=" + song,
-            //        + "&key={API_KEY}"
 
             // String JSON para object
             Gson gson = new Gson();
