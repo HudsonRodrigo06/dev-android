@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4edcd91-35f5-458a-8d59-db67b8937c60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/androidTest/java/junior/pedroso/rodrigo/appgetmusic/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/java/junior/pedroso/rodrigo/appgetmusic/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/app/src/test/java/junior/pedroso/rodrigo/appgetmusic/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppGetMusic/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rMIbz2eglmNr4DojEXxBlSoGkn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4edcd91-35f5-458a-8d59-db67b8937c60" name="Default Changelist" comment="" />
+      <created>1618779606811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618779606811</updated>
+    </task>
+    <servers />
+  </component>
+</project>
